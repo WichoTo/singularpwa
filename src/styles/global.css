@@ -1,0 +1,58 @@
+/* src/styles/global.css */
+
+:root {
+  --color-primary: #217ab6;
+  --color-accent:  #E07A5F;
+  --color-bg:      #FFF9F0;
+  --color-text:    #333333;
+  --font-sans:     'Montserrat', sans-serif;
+  --font-serif:    'Playfair Display', serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/imgs/bg2_we_sing.svg');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-serif);
+  margin: 0 0 0.5em;
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+button, .MuiButton-root {
+  font-family: var(--font-sans);
+  text-transform: none;
+}
+
+.active-link {
+  font-weight: bold;
+  color: var(--color-accent) !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
